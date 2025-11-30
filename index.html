@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Student Name</h1>
-         <img src="profile.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Course - Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Achievement 1</li>
-            <li>Achievement 2</li>
-            <li>Achievement 3</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Project 1</li>
-            <li>Project 2</li>
-            <li>Project 3</li>
-         </ul>
-      </section>
-      <script src="script.js"></script>
-   </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Eavan Joachim Doromal</h1>
+        <button onclick="toggleTheme()">🌙</button>
+    </nav>
+
+    <header>
+        <img src="profile.jpg" alt="My Photo">
+        <h2>Web Development Student</h2>
+        <p>Passionate about coding, UI design, and building modern web apps.</p>
+    </header>
+
+    <section class="card">
+        <h3>Achievements & Certifications</h3>
+        <ul>
+            <li>Completed HTML & CSS Basics</li>
+            <li>Created First Portfolio Website</li>
+            <li>Participated in WebDev Workshops</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h3>Projects</h3>
+        <ul>
+            <li><strong>Gym Tips YouTube Channel</strong> – Fitness content creator</li>
+            <li><strong>Java POS System</strong> – Inventory & Sales manager</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Eavan Joachim Doromal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
