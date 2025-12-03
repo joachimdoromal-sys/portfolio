@@ -3,13 +3,15 @@
     --bg: #ffffff;
     --text: #1a1a1a;
     --card: #f2f2f2;
+    --accent: #4c8bf5;
 }
 
 /* Dark Theme */
-.dark {
+body.dark {
     --bg: #1a1a1a;
     --text: #f2f2f2;
     --card: #2c2c2c;
+    --accent: #6ea0ff;
 }
 
 body {
@@ -20,23 +22,46 @@ body {
     transition: 0.3s;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
     background: var(--card);
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 nav h1 {
     margin: 0;
 }
 
-nav button {
+.theme-btn {
     font-size: 18px;
     padding: 5px 10px;
     cursor: pointer;
+    border: none;
+    background: var(--accent);
+    color: white;
+    border-radius: 6px;
 }
 
+/* FreshSense button */
+.link-btn {
+    padding: 7px 15px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Header */
 header {
     text-align: center;
     padding: 30px;
@@ -50,6 +75,7 @@ header img {
     object-fit: cover;
 }
 
+/* Cards */
 .card {
     width: 80%;
     max-width: 700px;
@@ -64,6 +90,7 @@ header img {
     margin-top: 0;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
