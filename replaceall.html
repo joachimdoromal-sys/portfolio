@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Problem 1 - ReplaceAll</title>
+</head>
+<body>
+
+<h2>Machine Problem 1: ReplaceAll</h2>
+
+<label>Enter text:</label><br>
+<input type="text" id="inputText">
+<button onclick="replaceAll()">Convert</button>
+
+<p><strong>Output:</strong></p>
+<p id="output"></p>
+
+<script>
+function replaceAll() {
+    let text = document.getElementById("inputText").value;
+    let result = text.trim().replaceAll(" ", "");
+    document.getElementById("output").innerText = result;
+}
+</script>
+
+</body>
+</html>
