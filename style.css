@@ -51,14 +51,14 @@ nav h1 {
     border-radius: 6px;
 }
 
-/* FreshSense button */
 .link-btn {
-    padding: 7px 15px;
+    padding: 10px 20px;
     background: var(--accent);
     color: white;
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
+    display: inline-block;
 }
 
 /* Header */
@@ -95,4 +95,26 @@ footer {
     text-align: center;
     padding: 20px;
     opacity: 0.6;
+}
+
+/* Machine Problems Section */
+.mp-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mp-section li {
+    margin-bottom: 15px; /* space between buttons */
+}
+
+.mp-section a.link-btn {
+    display: inline-block;
+    padding: 12px 20px;   /* bigger buttons */
+    font-size: 16px;
+}
+
+.mp-section {
+    padding: 25px;         /* more space inside card */
+    line-height: 1.6;      /* better spacing between text and buttons */
 }
