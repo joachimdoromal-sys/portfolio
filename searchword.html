@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Machine Problem 2 - SearchWord</title>
+</head>
+<body>
+
+<h2>Machine Problem 2: SearchWord</h2>
+
+<label>Enter sentence:</label><br>
+<input type="text" id="sentence"><br><br>
+
+<label>Enter word to search:</label><br>
+<input type="text" id="word">
+<button onclick="searchWord()">Check</button>
+
+<p><strong>Result:</strong></p>
+<p id="result"></p>
+
+<script>
+function searchWord() {
+    let sentence = document.getElementById("sentence").value;
+    let word = document.getElementById("word").value;
+
+    if (sentence.includes(word)) {
+        document.getElementById("result").innerText = "Found";
+    } else {
+        document.getElementById("result").innerText = "Not Found";
+    }
+}
+</script>
+
+</body>
+</html>
